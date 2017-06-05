@@ -25,33 +25,11 @@ body {
 
 /* Add your CSS here */
 .splash-nav-desktop-grid {
-	margin: 0 300px;
-	text-align: center;
-	display: flex;
+  display: flex;
+  flex-direction: row;
 }
 
-.splash-nav-primary {
-	list-style: none;	
-	display: flex;
-	justify-content: space-around;
-	flex: 1;
-	align-items: center;
-}
 
-.splash-nav-secondary {	
-	justify-content: flex-end;
-	display: flex;
-	list-style: none;
-	flex: 2;
-}
-
-.splash-nav-dropdown {
-	display: none;
-}
-
-.hamburger {
-	display: none;
-}
 /*@media ( min-width: 736px ) {
     .splash-nav-primary {
       display: none;
