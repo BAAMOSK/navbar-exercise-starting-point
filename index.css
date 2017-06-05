@@ -25,17 +25,156 @@ body {
 
 /* Add your CSS here */
 .splash-nav-desktop-grid {
-	margin: 0 300px;
-	text-align: center;
-	display: flex;
+	/*margin: 0 300px;*/
+	/*text-align: center;*/
+	/*display: flex;*/
+    max-width: 1200px;
+    margin: auto;
+    /*display: flex;*/
+}
+/*only used when we are in mobile view
+.splash-nav-desktop-grid-closed .splash-nav-item:not(.splash-nav-item__logo){
+    display: none;
+}*/
+
+.splash-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
+.splash-nav-item{
+    border-bottom: 1px solid grey;
+}
+
+.splash-nav-item > a {
+    text-transform: uppercase;
+    padding: 14px 18px;
+    display: block;
+}
+
+.splash-nav-dropdown{
+    background-color: grey;
+}
+
+.splash-nav-dropdown-hidden {
+	display: none;
+}
+.splash-nav-dropdown-title{
+    font-weight: normal;
+    padding: 8px 18px;
+    margin: 0;
+    color: black;
+
+}
+.splash-nav-dropdown > ul{
+    max-width: 1200px;
+    margin: auto;
+    /*display: block;*/
+    /*display:flex;
+    justify-content: space-around;*/
+}
+
+.splash-nav-dropdown-item img {
+    display: none;
+    /*width: 75px;*/
+}
+.splash-nav-web-dev-bootcamp-link{
+    display: none;
+}
+
+.splash-nav-dropdown-cp-links a {
+    display: block;
+    padding: 8px 18px;
+    color: black;
+}
+@media (min-width: 576px) {
+    .hamburger {
+        display: none;
+    }
+
+    .splash-nav-desktop-grid-closed .splash-nav-item:not(.splash-nav-item__logo) {
+        display: initial;
+    }
+
+    .splash-nav-desktop-grid{
+        display: flex;
+    }
+    .splash-nav-primary, .splash-nav-secondary{
+        height: 60px;
+        display: flex;
+    }
+    .splash-nav-primary{
+        flex: 1;
+    }
+    .splash-nav-item{
+        border: 0;
+        padding: 8px 0;
+    }
+    .splash-nav-item > a {
+        line-height: 30px;
+    }
+  .splash-nav-item:not(.splash-nav-item__logo):hover {
+      border-bottom: 1px solid blue;
+  }
+
+    .splash-nav-dropdown{
+        display: initial;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid #eeeeef;
+        padding: 40px;
+    }
+    .splash-nav-dropdown-hidden {
+        display: none;
+    }
+    .splash-nav-dropdown > ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .splash-nav-dropdown-item {
+        text-align: center;
+        max-width: 200px;
+    }
+    .splash-nav-dropdown-item img {
+        width: 74px;
+        display: inline;
+    }
+    .splash-nav-web-dev-bootcamp-link{
+        display: block;
+    }
+    .splash-nav-dropdown-cp-links span {
+        display: none;
+    }
+    .splash-nav-dropdown-cp-links {
+        display: flex;
+        justify-content: center;
+    }
+    .splash-nav-dropdown-cp-links > a {
+        color: #6799ff;
+    } 
+    .splash-nav-dropdown-cp-links a:nth-child(1) {
+        border-right: 1px solid #6799ff;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .splash-nav-item > a {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+
+/*____________Before Media Query was added____________
 .splash-nav-primary {
 	list-style: none;	
 	display: flex;
 	justify-content: space-around;
 	flex: 1;
-	align-items: center;
+	align-items: baseline;
 }
 
 .splash-nav-secondary {	
@@ -45,16 +184,30 @@ body {
 	flex: 2;
 }
 
-.splash-nav-dropdown {
-	display: none;
+
+.splash-nav-dropdown-item {
+    list-style: none;
+    margin-top: 5px;
+    text-align: center;
+    max-width: 200px;
+}
+
+.splash-nav-item > a {
+    display: flex;
+    display:block;
+    padding: 14px 18px;
+}
+
+#splash-nav-courses-dropdown {
+    display: block;
 }
 
 .hamburger {
 	display: none;
 }
-/*@media ( min-width: 736px ) {
+@media ( min-width: 736px ) {
     .splash-nav-primary {
       display: none;
     }
-}*/
-
+}
+*/
